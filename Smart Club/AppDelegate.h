@@ -15,7 +15,7 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic) ESTBeaconManager *beaconManager;
 
--  (NSString *)sendDataTo:(NSString *)endpoint;
+-  (void)sendDataTo:(NSString *)endpoint;
 
 @end
 

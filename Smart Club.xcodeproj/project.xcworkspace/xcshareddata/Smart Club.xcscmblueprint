@@ -1,20 +1,22 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "782F7FF5985D07902F4494C2BC748064BD3FCC82",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EE26F17522431538D868742714788F96FD61DC8E",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "782F7FF5985D07902F4494C2BC748064BD3FCC82" : 0,
-    "3EB64D5326B85F168A20986AD836585567967C7B" : 0
+    "EE26F17522431538D868742714788F96FD61DC8E" : 9223372036854775807,
+    "3EB64D5326B85F168A20986AD836585567967C7B" : 0,
+    "782F7FF5985D07902F4494C2BC748064BD3FCC82" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "808E78D1-C637-4887-93F9-2374F661FE5F",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "782F7FF5985D07902F4494C2BC748064BD3FCC82" : "smartclub\/",
-    "3EB64D5326B85F168A20986AD836585567967C7B" : ""
+    "EE26F17522431538D868742714788F96FD61DC8E" : "smartclub-ios\/",
+    "3EB64D5326B85F168A20986AD836585567967C7B" : "..",
+    "782F7FF5985D07902F4494C2BC748064BD3FCC82" : ""
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Smart Club",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "smartclub-ios\/Smart Club.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Smart Club.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/meggrasse\/eecs395.git",
@@ -25,6 +27,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/meggrasse\/smartclub.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "782F7FF5985D07902F4494C2BC748064BD3FCC82"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/meggrasse\/smartclub-ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EE26F17522431538D868742714788F96FD61DC8E"
     }
   ]
 }

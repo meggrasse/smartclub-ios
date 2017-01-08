@@ -15,6 +15,7 @@
     self.beaconManager.delegate = self;
     [self.beaconManager requestAlwaysAuthorization];
     
+    // Tracking lemons
     [self.beaconManager startMonitoringForRegion:[[CLBeaconRegion alloc]
                                                   initWithProximityUUID:[[NSUUID alloc]
                                                                          initWithUUIDString:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"]
@@ -47,31 +48,22 @@
 
 #pragma mark - ESTBeaconManagerDelegate
 
-//Starting off with one beacon
 - (void)beaconManager:(id)manager didEnterRegion:(CLBeaconRegion *)region {
     [self sendDataTo:@"upvote"];
+    NSLog(@"upvote");
 }
 
 - (void)beaconManager:(id)manager didExitRegion:(CLBeaconRegion *)region {
     [self sendDataTo:@"downvote"];
+    NSLog(@"downvote");
 }
 
--  (NSString *)sendDataTo:(NSString *)endpoint{
+- (void)sendDataTo:(NSString *)endpoint {
     NSString *url = [@"https://smartclub.herokuapp.com/" stringByAppendingString:endpoint];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setHTTPMethod:@"GET"];
     [request setURL:[NSURL URLWithString:url]];
-    NSError *error = [[NSError alloc] init];
-    NSHTTPURLResponse *responseCode = nil;
-    
-    NSData *oResponseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&responseCode error:&error]; //probably should update this
-    
-    if([responseCode statusCode] != 200){
-        NSLog(@"Error getting %@, HTTP status code %li", url, (long)[responseCode statusCode]);
-        return nil;
-    }
-    
-    return [[NSString alloc] initWithData:oResponseData encoding:NSUTF8StringEncoding];
+    [NSURLSession.sharedSession dataTaskWithRequest:request];
 }
 
 @end
